@@ -8,6 +8,8 @@ def BeginTheTest(algorithm,array):
     smtn = f"{algorithm}({array})"
     times = repeat(setup=setup_code, stmt=smtn, repeat=10, number=10)
     print(f"Sorting Algorithm {algorithm}. Fastest time : {min(times)}")
+
+    #ToDo Rozbicie na pliki, implementacje innych algorytmow
 if __name__ == "__main__":
     TestArray = [randint(0, 1000) for i in range(100)]
     BeginTheTest(algorithm="sorted", array=TestArray)
