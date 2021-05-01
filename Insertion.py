@@ -8,6 +8,7 @@ def insertionSort(Array):
         Array[j+1] = key
 
 ExampleArray = [12,11,10,13,5,6]
-insertionSort(ExampleArray)
-for i in range(len(ExampleArray)):
-    print ("% d" % ExampleArray[i])
+if __name__ == '__main__':
+    insertionSort(ExampleArray)
+    for i in range(len(ExampleArray)):
+        print("% d" % ExampleArray[i])
