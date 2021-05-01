@@ -1,12 +1,13 @@
-def Bubble_Sort(Array):
-    for Iteracja in range(len(Array)):
-        for Element in range (0, len(Array)-Iteracja-1): #Ostatni el zawsze posortowany w danej iteracji
-            if Array[Element] > Array[Element+1] :
-                Array[Element], Array[Element+1] = Array[Element+1], Array[Element]
+def bubble_Sort(array):
+    for Iteracja in range(len(array)):
+        for Element in range (0, len(array)-Iteracja-1):  # Ostatni el zawsze posortowany w danej iteracji
+            if array[Element] > array[Element+1] :
+                array[Element], array[Element+1] = array[Element+1], array[Element]
                 # Swap wartosci bez uzycia pamieci
 
-ExampleArray = [12,11,10,13,5,6]
+
+ExampleArray = [12, 11, 10, 13, 5, 6]
 if __name__ == '__main__':
-    Bubble_Sort(ExampleArray)
+    bubble_Sort(ExampleArray)
     for i in range(len(ExampleArray)):
         print("% d" % ExampleArray[i])

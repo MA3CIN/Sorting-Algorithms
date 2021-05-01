@@ -1,10 +1,10 @@
 from random import randint
 from timeit import repeat
 from Insertion import insertionSort
-from Bubble import Bubble_Sort
+from Bubble import bubble_Sort
 
 
-def BeginTheTest(algorithm,array):
+def beginTheTest(algorithm,array):
     setup_code = f"from __main__ import {algorithm}" \
         if algorithm != "sorted" else ""
     smtn = f"{algorithm}({array})"
@@ -16,7 +16,7 @@ def BeginTheTest(algorithm,array):
 
 if __name__ == "__main__":
     TestArray = [randint(0, 1000) for i in range(100)]
-    Bubble_Sort(TestArray)
+    bubble_Sort(TestArray)
     for i in range(len(TestArray)):
         print("% d" % TestArray[i])
-    # BeginTheTest(algorithm="sorted", array=TestArray)
+    # beginTheTest(algorithm="sorted", array=TestArray)
