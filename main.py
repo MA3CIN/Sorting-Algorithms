@@ -16,5 +16,7 @@ def BeginTheTest(algorithm,array):
 
 if __name__ == "__main__":
     TestArray = [randint(0, 1000) for i in range(100)]
-
+    Bubble_Sort(TestArray)
+    for i in range(len(TestArray)):
+        print("% d" % TestArray[i])
     # BeginTheTest(algorithm="sorted", array=TestArray)

@@ -4,3 +4,9 @@ def Bubble_Sort(Array):
             if Array[Element] > Array[Element+1] :
                 Array[Element], Array[Element+1] = Array[Element+1], Array[Element]
                 # Swap wartosci bez uzycia pamieci
+
+ExampleArray = [12,11,10,13,5,6]
+if __name__ == '__main__':
+    Bubble_Sort(ExampleArray)
+    for i in range(len(ExampleArray)):
+        print("% d" % ExampleArray[i])
